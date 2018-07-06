@@ -15,8 +15,7 @@
 [Архив с датасетом](http://mplab.ucsd.edu/wordpress/wp-content/uploads/genki4k.tar)
 
 ## Использование
-#### Создание лэндмарков
-___
+#### Создание лэндмарков___
 Файл `create_landmarks.py` создает папку с текстовыми файлами для каждого изображения, в которых записаны данные о *face landmarks*
 ```
 python create_landmarks.py shape_predictor_file.dat .\genki4k\files .\genki4k\landmarks
