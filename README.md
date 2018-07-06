@@ -17,8 +17,8 @@
 ## Использование
 #### Создание лэндмарков
 Файл `create_landmarks.py` создает папку с текстовыми файлами для каждого изображения, в которых записаны данные о *face landmarks*
-```console
-...\Detectors-On-Face-Landmarks>python create_landmarks.py shape_predictor_file.dat .\genki4k\files .\genki4k\landmarks
+```
+python create_landmarks.py shape_predictor_file.dat .\genki4k\files .\genki4k\landmarks
 ```
 Аргументы:
 - `predictor_file` - файл с *shape predictor*
@@ -27,8 +27,8 @@
 
 #### Создание модели детектора улыбок
 Файл `create_model_smile.py` создает файл с моделью детектора улыбок по размеченному датасету GENKI-4K
-```bash
-...\Detectors-On-Face-Landmarks>python create_model_smile.py .\genki4k\labels.txt .\genki4k\landmarks smile_model.pkl
+```
+python create_model_smile.py .\genki4k\labels.txt .\genki4k\landmarks smile_model.pkl
 ```
 Аргументы:
 - `labels_file` - файл с разметкой датасета
@@ -37,8 +37,8 @@
 
 #### Использование детекторов
 Файл `use.py` создает файлы, в которые записаны имена изображений, которые удовлетворяют детектору открытого рта и детектору улыбки
-```console
-...\Detectors-On-Face-Landmarks>python use.py shape_predictor_file.dat .\example_data\images smile_model.pkl mouth.txt smile.txt 
+```
+python use.py shape_predictor_file.dat .\example_data\images smile_model.pkl mouth.txt smile.txt 
 ```
 Аргументы:
 - `predictor_file` - файл с *shape predictor*
